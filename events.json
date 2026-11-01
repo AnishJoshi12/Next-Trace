@@ -1,0 +1,51 @@
+{
+  "OVERHEAT_WARNING": {
+    "label": "battery overheat warning", "severity": "high",
+    "aliases": ["overheat", "overheating", "over heating", "overheated", "battery overheating", "thermal warning", "overheat warning", "battery warning", "temperature warning", "too hot"],
+    "primary_signal": "battery_temp_max_c",
+    "trigger": {"signal": "battery_overheat_warning", "edge": "rise", "threshold": 0.5},
+    "context_signals": ["battery_temp_max_c", "battery_temp_min_c", "pack_current_a", "pack_voltage_v", "motor_power_kw", "coolant_temp_c", "vehicle_speed_kph", "ambient_temp_c", "soc_pct"]
+  },
+  "ADAS_DISENGAGE": {
+    "label": "ADAS disengagement", "severity": "medium",
+    "aliases": ["adas disengagement", "adas disengagements", "adas disengage", "adas disengaged", "adas drop", "assist disengage", "assist disengaged", "lane assist off", "lost assist", "adas event", "adas events", "disengagement", "disengagements", "disengaged", "adas"],
+    "primary_signal": "vehicle_speed_kph",
+    "trigger": {"signal": "adas_active", "edge": "fall", "threshold": 0.5},
+    "context_signals": ["vehicle_speed_kph", "motor_power_kw", "adas_active", "pack_current_a"]
+  },
+  "DTC": {
+    "label": "diagnostic trouble code", "severity": "medium",
+    "aliases": ["dtc", "dtcs", "trouble code", "trouble codes", "fault code", "fault codes", "diagnostic code", "diagnostic codes", "check engine", "malfunction light", "fault"],
+    "primary_signal": null,
+    "trigger": null,
+    "context_signals": []
+  },
+  "HARSH_BRAKE": {
+    "label": "harsh braking", "severity": "low",
+    "aliases": ["harsh braking", "hard braking", "harsh brake", "hard brake", "sudden braking", "emergency braking", "brake event"],
+    "primary_signal": "imu_accel_long_g",
+    "trigger": null,
+    "context_signals": []
+  },
+  "HARSH_ACCEL": {
+    "label": "harsh acceleration", "severity": "low",
+    "aliases": ["harsh acceleration", "hard acceleration", "rapid acceleration", "harsh accel"],
+    "primary_signal": "imu_accel_long_g",
+    "trigger": null,
+    "context_signals": []
+  },
+  "HARSH_CORNER": {
+    "label": "harsh cornering", "severity": "low",
+    "aliases": ["harsh cornering", "hard cornering", "sharp turn", "harsh corner"],
+    "primary_signal": "imu_accel_lat_g",
+    "trigger": null,
+    "context_signals": []
+  },
+  "THERMAL_ANOMALY": {
+    "label": "battery thermal anomaly", "severity": "medium",
+    "aliases": ["thermal anomaly", "temperature anomaly", "battery anomaly", "unusual battery temperature", "anomaly", "anomalies"],
+    "primary_signal": "battery_temp_max_c",
+    "trigger": null,
+    "context_signals": []
+  }
+}
