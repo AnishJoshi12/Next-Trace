@@ -1,0 +1,90 @@
+{
+  "soc_pct": {
+    "label": "battery state of charge", "unit": "%", "kind": "analog", "decimals": 1, "scale": 100,
+    "aliases": ["soc", "state of charge", "battery level", "battery charge", "charge level", "battery percentage", "battery percent", "how much charge", "charge"]
+  },
+  "pack_voltage_v": {
+    "label": "battery pack voltage", "unit": "V", "kind": "analog", "decimals": 1, "scale": 450,
+    "aliases": ["pack voltage", "battery voltage", "hv voltage", "high voltage"]
+  },
+  "pack_current_a": {
+    "label": "battery pack current", "unit": "A", "kind": "analog", "decimals": 1, "scale": 300,
+    "aliases": ["pack current", "battery current", "current draw", "amps", "amperage"]
+  },
+  "battery_temp_max_c": {
+    "label": "battery temperature (hottest cell)", "unit": "°C", "kind": "analog", "decimals": 1, "scale": 60,
+    "aliases": ["battery temp", "battery temperature", "battery heat", "pack temperature", "pack temp", "cell temperature", "cell temp", "max battery temp", "hottest cell", "battery thermal"]
+  },
+  "battery_temp_min_c": {
+    "label": "battery temperature (coolest cell)", "unit": "°C", "kind": "analog", "decimals": 1, "scale": 60,
+    "aliases": ["min battery temp", "minimum battery temperature", "lowest battery temp", "coolest cell", "min cell temp"]
+  },
+  "coolant_temp_c": {
+    "label": "coolant temperature", "unit": "°C", "kind": "analog", "decimals": 1, "scale": 100,
+    "aliases": ["coolant temp", "coolant temperature", "coolant", "cooling temperature", "thermal loop temperature"]
+  },
+  "ambient_temp_c": {
+    "label": "outside (ambient) temperature", "unit": "°C", "kind": "analog", "decimals": 1, "scale": 50,
+    "aliases": ["ambient temp", "ambient temperature", "outside temp", "outside temperature", "outdoor temperature", "weather temperature"]
+  },
+  "tire_pressure_kpa": {
+    "label": "average tyre pressure", "unit": "kPa", "kind": "analog", "decimals": 0, "scale": 300,
+    "aliases": ["tire pressure", "tyre pressure", "tire", "tyre", "tires", "tyres", "tpms"]
+  },
+  "vehicle_speed_kph": {
+    "label": "vehicle speed", "unit": "km/h", "kind": "analog", "decimals": 1, "scale": 150,
+    "aliases": ["speed", "vehicle speed", "how fast", "velocity", "kph", "km/h"]
+  },
+  "motor_power_kw": {
+    "label": "motor power", "unit": "kW", "kind": "analog", "decimals": 1, "scale": 100,
+    "aliases": ["motor power", "power draw", "power", "kw", "motor output", "traction power"]
+  },
+  "est_range_km": {
+    "label": "estimated remaining range", "unit": "km", "kind": "analog", "decimals": 0, "scale": 300,
+    "aliases": ["range", "remaining range", "estimated range", "driving range", "distance to empty", "dte", "km left", "how far can i go"]
+  },
+  "odometer_km": {
+    "label": "odometer", "unit": "km", "kind": "analog", "decimals": 1, "scale": 100000,
+    "aliases": ["odometer", "odo", "distance travelled", "total distance", "mileage"]
+  },
+  "adas_active": {
+    "label": "ADAS assist", "unit": "", "kind": "flag", "decimals": 0, "scale": 1,
+    "aliases": ["adas", "driver assist", "lane assist", "adaptive cruise", "assist"]
+  },
+  "battery_overheat_warning": {
+    "label": "battery overheat warning lamp", "unit": "", "kind": "flag", "decimals": 0, "scale": 1,
+    "aliases": ["overheat warning", "overheating warning", "battery warning", "thermal warning", "warning lamp"]
+  },
+  "cabin_temp_c": {
+    "label": "cabin temperature", "unit": "°C", "kind": "analog", "decimals": 1, "scale": 50,
+    "aliases": ["cabin temp", "cabin temperature", "inside temperature", "interior temperature", "inside temp"]
+  },
+  "cabin_humidity_pct": {
+    "label": "cabin humidity", "unit": "%", "kind": "analog", "decimals": 0, "scale": 100,
+    "aliases": ["cabin humidity", "humidity", "inside humidity"]
+  },
+  "cabin_pressure_hpa": {
+    "label": "cabin air pressure", "unit": "hPa", "kind": "analog", "decimals": 0, "scale": 1100,
+    "aliases": ["cabin pressure", "air pressure", "barometric pressure"]
+  },
+  "imu_accel_long_g": {
+    "label": "longitudinal acceleration", "unit": "g", "kind": "analog", "decimals": 2, "scale": 1,
+    "aliases": ["longitudinal acceleration", "forward acceleration", "braking force", "acceleration", "deceleration"]
+  },
+  "imu_accel_lat_g": {
+    "label": "lateral acceleration", "unit": "g", "kind": "analog", "decimals": 2, "scale": 1,
+    "aliases": ["lateral acceleration", "cornering force", "sideways acceleration"]
+  },
+  "imu_accel_vert_g": {
+    "label": "vertical acceleration", "unit": "g", "kind": "analog", "decimals": 2, "scale": 1,
+    "aliases": ["vertical acceleration", "road vibration", "bumps"]
+  },
+  "imu_gyro_z_dps": {
+    "label": "yaw rate", "unit": "deg/s", "kind": "analog", "decimals": 1, "scale": 100,
+    "aliases": ["yaw rate", "turn rate", "gyro", "yaw"]
+  },
+  "gps_speed_kph": {
+    "label": "GPS speed", "unit": "km/h", "kind": "analog", "decimals": 1, "scale": 150,
+    "aliases": ["gps speed", "satellite speed"]
+  }
+}
